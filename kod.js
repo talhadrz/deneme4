@@ -1,6 +1,7 @@
 let secretNumber = Math.floor(Math.random() * 100) + 1; // 1-100 arası sayı seç
 let attempts = 0;
  let sayi = secretNumber;
+ document.getElementById("guessInput").value = sayi; 
 function checkGuess() {
     let guess = parseInt(document.getElementById("guessInput").value);
     let message = "";
@@ -20,10 +21,6 @@ function checkGuess() {
             sayi = secretNumber;
         }
     }
-
+document.getElementById("guessInput").value = sayi; 
     document.getElementById("resultMessage").innerText = message;
-}
-function koy()
-{
-    document.getElementById("guessInput").value = sayi;   
 }
