@@ -21,6 +21,6 @@ function checkGuess() {
             sayi = secretNumber;
         }
     }
-document.getElementById("guessInput").value = sayi; 
+document.getElementById("kop").innerText = sayi; 
     document.getElementById("resultMessage").innerText = message;
 }
